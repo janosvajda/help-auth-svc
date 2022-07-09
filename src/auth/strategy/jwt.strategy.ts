@@ -12,7 +12,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor() {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-      secretOrKey: 'dev',
+      secretOrKey: 'secr{E}tKey', //@todo Remove it from here -> .env file & prod -> AWS AppConfig
       ignoreExpiration: true,
     });
   }
