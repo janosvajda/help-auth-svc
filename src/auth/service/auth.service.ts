@@ -32,8 +32,9 @@ export class AuthService {
   }
 
   public async login({ email, password }: LoginRequestDto): Promise<LoginResponse> {
+    console.log('PPPP1');
     const auth: Auth = await this.repository.findOne({ where: { email } });
-
+    console.log('PPPP2', auth);
     if (!auth) {
       return { status: HttpStatus.NOT_FOUND, error: ['E-Mail not found'], token: null };
     }

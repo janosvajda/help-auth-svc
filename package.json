@@ -1,8 +1,8 @@
 {
-  "name": "grpc-nest-auth-svc",
+  "name": "help-auth-svc",
   "version": "1.0.0",
   "description": "",
-  "author": "Kevin Vogel",
+  "author": "Janos Vajda",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -36,6 +36,7 @@
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
+    "help-grpc-proto": "github:janosvajda/help-grpc-proto",
     "passport": "^0.5.2",
     "passport-jwt": "^4.0.0",
     "pg": "^8.7.3",
